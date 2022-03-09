@@ -2,7 +2,7 @@ import React from 'react';
 import Header from './components/Header';
 import Body from './components/Body';
 import TodoItem from './components/TodoItem';
-import Form from './components/Form';
+// import Form from './components/Form';
 import {
   ChartBarIcon,
   CursorClickIcon,
@@ -11,6 +11,7 @@ import {
   ViewGridIcon,
 } from '@heroicons/react/outline';
 import CallAPI from './components/CallAPI';
+import FormHook from './components/FormHook';
 
 const solutions = [
   {
@@ -54,7 +55,7 @@ function App() {
       {solutions.map((item) => (
         <TodoItem key={item.name} dataItem={item} />
       ))}
-      <Form />
+      <FormHook />
       <CallAPI/>
     </div>
   );
